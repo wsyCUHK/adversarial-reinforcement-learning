@@ -2,7 +2,7 @@
 """
 Created on Wed Nov 20 09:35:00 2019
 
-@author: yorksywang
+@author: shuoyao wang
 """
 
 import sklearn.svm as svm 
@@ -83,28 +83,6 @@ def get_data(test_size=0.2):
     print(x_temp.shape)
     y=np.concatenate((y,y_temp),axis=0)
     x=np.concatenate((x,x_temp),axis=0)
-# =============================================================================
-#     y=np.concatenate((y,y_temp),axis=0)
-#     y=np.concatenate((y,y_temp),axis=0)
-#     y=np.concatenate((y,y_temp),axis=0)
-#     y=np.concatenate((y,y_temp),axis=0)
-#     y=np.concatenate((y,y_temp),axis=0)
-#     y=np.concatenate((y,y_temp),axis=0)
-#     y=np.concatenate((y,y_temp),axis=0)
-#     y=np.concatenate((y,y_temp),axis=0)
-#     y=np.concatenate((y,y_temp),axis=0)
-#     y=np.concatenate((y,y_temp),axis=0)
-#     x=np.concatenate((x,x_temp),axis=0)
-#     x=np.concatenate((x,x_temp),axis=0)
-#     x=np.concatenate((x,x_temp),axis=0)
-#     x=np.concatenate((x,x_temp),axis=0)
-#     x=np.concatenate((x,x_temp),axis=0)
-#     x=np.concatenate((x,x_temp),axis=0)
-#     x=np.concatenate((x,x_temp),axis=0)
-#     x=np.concatenate((x,x_temp),axis=0)
-#     x=np.concatenate((x,x_temp),axis=0)
-#     x=np.concatenate((x,x_temp),axis=0)
-# =============================================================================
     ran_index=np.random.permutation(np.shape(y)[0])
     
     y=y[ran_index]
@@ -113,48 +91,7 @@ def get_data(test_size=0.2):
     X_train,X_test,Y_train,Y_test=train_test_split(x,y,test_size=test_size,random_state=20170816)
     #print(X_train.shape)
 
-# =============================================================================
-#     Y_test=np.concatenate((Y_test,y_test_temp),axis=0)
-#     Y_test=np.concatenate((Y_test,y_test_temp),axis=0)
-#     Y_test=np.concatenate((Y_test,y_test_temp),axis=0)
-#     Y_test=np.concatenate((Y_test,y_test_temp),axis=0)
-#     Y_test=np.concatenate((Y_test,y_test_temp),axis=0)
-#     Y_test=np.concatenate((Y_test,y_test_temp),axis=0)
-#     Y_test=np.concatenate((Y_test,y_test_temp),axis=0)
-#     Y_test=np.concatenate((Y_test,y_test_temp),axis=0)
-#     Y_test=np.concatenate((Y_test,y_test_temp),axis=0)
-#     Y_test=np.concatenate((Y_test,y_test_temp),axis=0)
-#     X_test=np.concatenate((X_test,x_test_temp),axis=0)
-#     X_test=np.concatenate((X_test,x_test_temp),axis=0)
-#     X_test=np.concatenate((X_test,x_test_temp),axis=0)
-#     X_test=np.concatenate((X_test,x_test_temp),axis=0)
-#     X_test=np.concatenate((X_test,x_test_temp),axis=0)
-#     X_test=np.concatenate((X_test,x_test_temp),axis=0)
-#     X_test=np.concatenate((X_test,x_test_temp),axis=0)
-#     X_test=np.concatenate((X_test,x_test_temp),axis=0)
-#     X_test=np.concatenate((X_test,x_test_temp),axis=0)
-#     X_test=np.concatenate((X_test,x_test_temp),axis=0)
-#     Y_test=np.concatenate((Y_test,y_test_temp),axis=0)
-#     Y_test=np.concatenate((Y_test,y_test_temp),axis=0)
-#     Y_test=np.concatenate((Y_test,y_test_temp),axis=0)
-#     Y_test=np.concatenate((Y_test,y_test_temp),axis=0)
-#     Y_test=np.concatenate((Y_test,y_test_temp),axis=0)
-#     Y_test=np.concatenate((Y_test,y_test_temp),axis=0)
-#     Y_test=np.concatenate((Y_test,y_test_temp),axis=0)
-#     Y_test=np.concatenate((Y_test,y_test_temp),axis=0)
-#     Y_test=np.concatenate((Y_test,y_test_temp),axis=0)
-#     Y_test=np.concatenate((Y_test,y_test_temp),axis=0)
-#     X_test=np.concatenate((X_test,x_test_temp),axis=0)
-#     X_test=np.concatenate((X_test,x_test_temp),axis=0)
-#     X_test=np.concatenate((X_test,x_test_temp),axis=0)
-#     X_test=np.concatenate((X_test,x_test_temp),axis=0)
-#     X_test=np.concatenate((X_test,x_test_temp),axis=0)
-#     X_test=np.concatenate((X_test,x_test_temp),axis=0)
-#     X_test=np.concatenate((X_test,x_test_temp),axis=0)
-#     X_test=np.concatenate((X_test,x_test_temp),axis=0)
-#     X_test=np.concatenate((X_test,x_test_temp),axis=0)
-#     X_test=np.concatenate((X_test,x_test_temp),axis=0)
-# =============================================================================
+
     
     sc=StandardScaler()
     
